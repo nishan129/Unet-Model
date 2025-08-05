@@ -1,0 +1,6 @@
+torch 
+transformers 
+matplotlib
+tdqm
+torchvision
+wandb
