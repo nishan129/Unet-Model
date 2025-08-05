@@ -16,22 +16,30 @@ Rationale: Higher learning rates caused oscillations; 1e-4 provided stable train
 * Weight Decay: 1e-5
 Rationale: Helped generalization without slowing convergence.
 
-Loss Functions: CrossEntropy, Dice, BCE + Dice (α=0.5)
+* Loss Functions: CrossEntropy, Dice, BCE + Dice (α=0.5)
+
 Rationale: Dice loss improved small-object segmentation; BCE+Dice gave the best overall IoU.
+
 Final Settings
-yaml
-Copy
-Edit
+
 image_size: (256, 256)
+
 batch_size: 8
+
 num_epochs: 50
+
 learning_rate: 1e-4
+
 weight_decay: 1e-5
+
 loss_function: BCE + Dice (alpha=0.5)
+
 optimizer: Adam
+
 scheduler: ReduceLROnPlateau
 
 🏗 Architecture
+
 Base Model: UNet with encoder–decoder skip connections.
 
 * UNet Autoencoder–Decoder with encoder–decoder skip connections.
@@ -71,6 +79,7 @@ I experimented with multiple conditioning strategies before finalizing the color
 * Stable segmentation without unintended image generation.
 
 * Easy to interpret and debug.
+
 Conditioning: Bilinear upsampling enabled (bilinear=True) for smoother feature maps.
 
 Augmentation Challenges
