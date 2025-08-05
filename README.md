@@ -34,7 +34,7 @@ weight_decay: 1e-5
 
 loss_function: BCE + Dice (alpha=0.5)
 
-optimizer: Adam
+optimizer: AdamW
 
 scheduler: ReduceLROnPlateau
 
