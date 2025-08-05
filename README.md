@@ -1,19 +1,20 @@
 UNet Image Segmentation – Project Report
 📌 Hyperparameters
 Tried
+
 Image Size: 128×128, 256×256
 
 Rationale: Smaller sizes train faster but lose detail; 256×256 chosen for better boundary preservation.
 
-Batch Size: 4, 8, 16
+Batch Size: 4, 8,
 
 Rationale: Larger batches improved stability but were limited by GPU memory.
 
-Learning Rate: 1e-3, 5e-4, 1e-4
+Learning Rate:  1e-4
 
 Rationale: High LR sped up convergence but caused oscillations; 1e-4 gave smooth, stable training.
 
-Weight Decay: 0, 1e-5, 1e-4
+Weight Decay:  1e-5 
 
 Rationale: Small regularization improved generalization without slowing training.
 
