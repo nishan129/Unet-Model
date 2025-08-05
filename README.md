@@ -114,7 +114,5 @@ Augmentation Challenges
 * Uploaded trained model to the Hugging Face Model Hub for sharing and reproducibility.
 * Skip connections are critical for retaining fine spatial details.
 * Loss choice has a greater impact on small-object segmentation than minor architecture tweaks.
-
-Skip connections are critical for retaining fine spatial details.
-
-Loss choice has a greater impact on small-object segmentation than minor architecture tweaks.
+* Skip connections are critical for retaining fine spatial details.
+* Loss choice has a greater impact on small-object segmentation than minor architecture tweaks.
